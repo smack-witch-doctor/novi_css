@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<style>
+body{
+background-color: azure;
+display:flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+padding: 0;
+margin: 0;
+}
+
+.git-logo {
+width: 150px;
+height: 150px;
+background-color: #f06033;
+position: relative;
+border-radius: 15%;
+transform: rotate(45deg);
+}
+
+
+
+.line1 {
+background-color: white;
+width: 110px;
+height:10px;
+position:apsolute;
+top:40px;
+}
+
+
+.line2 {
+background-color: white;
+width:90px;
+height:12px;
+position:apsolute;
+top:70px;
+left:30px;
+transform: rotate(45deg);
+}
+
+.line2::before{
+content:"";
+position: absolute;
+border-radius: 50%;
+top:-8px;
+left:70px;
+width: 30px;
+height: 30px;
+background-color: white;
+}
+
+
+
+
+.line1::before{
+content:"";
+position: absolute;
+border-radius: 50%;
+top:-8px;
+left:30px;
+width: 30px;
+height: 30px;
+background-color: white;
+}
+
+
+.line1::after{
+background-color: white;
+content:"";
+position: absolute;
+border-radius: 50%;
+top:-8px;
+left:90px;
+width: 30px;
+height: 30px;
+
+}
+
+</style>
+<body>
+
+    <div class="git-logo">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+
+    
+</body>
+</html>
